@@ -1,33 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
+  background: #f5f7f9;
+  height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.zui-table {
+  border: solid 1px #DDEEEE;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 13px Arial, sans-serif;
+  width: 75%;
+}
+.zui-table thead th {
+  background-color: #DDEFEF;
+  border: solid 1px #DDEEEE;
+  color: #336B6B;
+  padding: 10px;
+  text-align: left;
+  text-shadow: 1px 1px 1px #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+tbody tr:hover {
+  background: black;
+}
+/* .zui-table tbody td {
+  border: solid 1px #DDEEEE;
+  color: #333;
+  padding: 10px;
+  text-shadow: 1px 1px 1px #fff;
+} */
+.zui-table-rounded {
+  border: none;
+}
+.zui-table-rounded thead th {
+  background-color: lightgray;
+  border: none;
+  color: black;
+  text-align: center;
+}
+.zui-table-rounded thead th:first-child {
+  border-radius: 5px 0 0 0;
+}
+.zui-table-rounded thead th:last-child {
+  border-radius: 0 5px 0 0;
+}
+/* .zui-table-rounded tbody td {
+  border: none;
+  border-top: solid 1px lightgray;
+  background-color: white;
+  padding: 20px;
+} */
+
+.cell{
+  border: none;
+  padding: 20px;
+}
+
+.row{
+  background: white;
+  cursor: pointer;
+  border-top: 1.5px solid lightgray;
+}
+.row:hover{
+  background: pink;
+}
+.zui-table-rounded tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+.zui-table-rounded tbody tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+
+.overflow {
+  overflow-x: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
